@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent mainIntent = new Intent(getApplicationContext(),
                         Scanner.class);
                 startActivity(mainIntent);
+                finish();
             }
         });
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent mainIntent = new Intent(getApplicationContext(),
                         List.class);
                 startActivity(mainIntent);
+                finish();
             }
         });
 
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent mainIntent = new Intent(getApplicationContext(),
                         Account.class);
                 startActivity(mainIntent);
+                finish();
             }
         });
         //About Class
@@ -56,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent mainIntent = new Intent(getApplicationContext(),
                         About.class);
                 startActivity(mainIntent);
+                finish();
             }
         });
     }

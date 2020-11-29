@@ -9,63 +9,73 @@
     android:backgroundTintMode="multiply"
     android:alpha="0.88"
     tools:context=".Login">
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:text="Sign In"
-        android:textColor="@android:color/white"
-        android:textSize="50sp"
-
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-89dp">
 
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:hint="ID"
-            android:padding="15dp"
-            android:theme="@style/Text_style"
-            android:typeface="sans" />
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:fabCustomSize="100dp"
-                android:layout_alignParentEnd="true"
+        >
+            <ImageView
+                android:src="@drawable/ic_logs"
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="200dp"
-                android:layout_marginEnd="100dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/button1"
-                android:id="@+id/sign_in"
-                android:pointerIcon="arrow"
+                android:layout_marginLeft="20dp"
+                android:layout_height="200dp"
+                android:layout_width="200dp"
+                android:id="@+id/logo"
+
                 />
 
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/logo"
+            android:layout_margin="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="SCAN &amp; GO"
+            android:textColor="#7de89d"
+            android:textSize="40dp"
+            android:id="@+id/logo_name"/>
 
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/logo_subname"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/logo_name"
+            android:layout_marginTop="-1dp"
+            android:fontFamily="@font/montserrat"
+            android:text="LOG IN"
+            android:textColor="#7de89d"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"/>
 
-    </LinearLayout>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/logo_subname"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat"
+            android:hint="ID"
+            android:textColor="#7de89d"
+            android:textSize="20dp"
+            android:id="@+id/login_id"
+            android:inputType="text"
+            />
+<Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:theme="@style/Button.Color"
+        android:layout_below="@id/login_id"
+        android:text="Log In"
+        tools:ignore="MissingConstraints"/>
+
+    </RelativeLayout>
+
+
+
 
 
 

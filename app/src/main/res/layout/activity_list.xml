@@ -19,6 +19,15 @@
         android:id="@+id/header_layout"
         >
 
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="LOG LIST"
+            android:textColor="#7de89d"
+
+            android:textSize="30dp" />
 
 
     </LinearLayout>
@@ -43,5 +52,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
         />
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:theme="@style/Button.Color"
+        android:text="Back"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
